@@ -1,5 +1,5 @@
 
-from  app.database.mongodb_connect import database
+from  backend.database.mongodb_connect import database
 from bson import ObjectId
 
 async def register_user(user_data: dict) -> dict:

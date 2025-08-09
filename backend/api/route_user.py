@@ -1,6 +1,6 @@
 from typing import List
-from app.models.user_model import UserModel,LoginUserModel,LoginResponse
-from app.services.user_service import register_user, get_all_user, login_user
+from backend.models.user_model import UserModel,LoginUserModel,LoginResponse
+from backend.services.user_service import register_user, get_all_user, login_user
 from fastapi import APIRouter, HTTPException
 from bson import ObjectId
 
