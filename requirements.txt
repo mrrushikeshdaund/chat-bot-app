@@ -3,3 +3,5 @@ uvicorn
 motor
 pymongo
 dotenv
+httpx
+groq

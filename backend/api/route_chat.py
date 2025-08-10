@@ -5,6 +5,6 @@ from backend.models.chat_model import ChatModel
 router = APIRouter()
 
 @router.post("/")
-def chat(chat_model: ChatModel):
-    response = get_chat_response(chat_model.message)
+async def chat(chat_model: ChatModel):
+    response = await get_chat_response(chat_model.message)
     return {"response": response}
