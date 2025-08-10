@@ -7,13 +7,11 @@ function App() {
   return (
     <>
       <HeaderComponent />
-      <Router>
-        <Routes>
-          <Route path="/" element={<ChatPage />} />
-          <Route index element={<ChatPage />} />
-          <Route path="/chat" element={<ChatPage />} />
-        </Routes>
-      </Router>
+      <Routes>
+        <Route path="/" element={<ChatPage />} />
+        <Route index element={<ChatPage />} />
+        <Route path="/chat" element={<ChatPage />} />
+      </Routes>
     </>
   );
 }
